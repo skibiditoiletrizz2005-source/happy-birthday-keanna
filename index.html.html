@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tab-container">
+        <!-- TAB 1: PASSWORD -->
+        <div class="tab-pane active" id="tab1">
+            <div class="password-screen">
+                <div class="password-title" id="passwordTitle">Enter Password</div>
+                <div class="password-subtitle" id="passwordSubtitle">Only special people know the password...</div>
+                <div class="password-input-container">
+                    <input type="password" class="password-input" id="passwordInput" placeholder="What's the password?">
+                    <button class="password-btn" onclick="checkPassword()">Enter</button>
+                </div>
+                <div class="password-error" id="passwordError" style="display: none;">Wrong password! Try again</div>
+            </div>
+        </div>
+
+        <!-- TAB 2: BIRTHDAY & ENVELOPE -->
+        <div class="tab-pane" id="tab2">
+            <div class="birthday-screen">
+                <div class="birthday-greeting" id="birthdayGreeting">HAPPY BIRTHDAY!</div>
+                <div class="birthday-message" id="birthdayMessage">Wow, it's your special day!<br>I have something for you...</div>
+                <div class="envelope" id="envelope" onclick="showChoiceScreen()">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body" id="envelopeText">Open me!</div>
+                </div>
+                <div class="envelope-hint" id="envelopeHint">Click the envelope!</div>
+            </div>
+        </div>
+
+        <!-- TAB 3: CHOICE -->
+        <div class="tab-pane" id="tab3">
+            <div class="choice-screen">
+                <div class="choice-question" id="choiceQuestion">Do you want to open the message?</div>
+                <div class="choice-buttons">
+                    <button class="choice-btn yes" onclick="showMessage(true)" id="choiceYes">YES!</button>
+                    <button class="choice-btn no" onclick="showMessage(false)" id="choiceNo">NO</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 4: MESSAGE -->
+        <div class="tab-pane" id="tab4">
+            <div class="message-screen">
+                <div class="message-header" id="messageHeader">Your Special Message</div>
+                <div class="no-choice-message" id="noChoiceMessage" style="display: none;">You actually have no choice, this is required</div>
+                <div class="message-content" id="messageContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-navigation">
+        <button class="nav-btn prev-btn" id="prevBtn" onclick="prevTab()">Previous</button>
+        <button class="nav-btn next-btn" id="nextBtn" onclick="nextTab()">Next Tab</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

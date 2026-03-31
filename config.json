@@ -1,0 +1,34 @@
+{
+  "birthday": {
+    "name": "Keanna",
+    "age": 17,
+    "date": "12/03/2026"
+  },
+  "password": "09071",
+  "colors": {
+    "primary": "#FFE5B4",
+    "secondary": "#FFD1DC",
+    "text": "#000000",
+    "background_gradient_start": "#fffacd",
+    "background_gradient_end": "#ffffe0"
+  },
+  "fonts": {
+    "main": "'Indie Flower', cursive"
+  },
+  "messages": {
+    "password_title": "Enter Password",
+    "password_subtitle": "",
+    "password_subtitle_clue": "clue: your birthday in the julian calendar",
+    "password_error": "Wrong password! Try again",
+    "birthday_greeting": "HAPPY BIRTHDAY!<br><span class='greeting-subtitle'>(super late because i lost the website)</span>",
+    "birthday_message": "Wow, it's your special day!<br>I have something for you...",
+    "envelope_text": "Open me!",
+    "envelope_hint": "Click the envelope!",
+    "choice_question": "Do you want to open the message?",
+    "choice_yes": "YES!",
+    "choice_no": "NO",
+    "message_header": "Your Special Message",
+    "no_choice_message": "You actually have no choice, this is required",
+    "birthday_message_content": "Keanna,\n\nHappy happy birthdayyy!!!! You're 17 omg. Can I just say that making this was more fun than I thought? I did not expect that. Or maybe I'm just into weird things. But all those aside, I hope you like this, I couldn't get you a gift so I got you this instead. There's my fav bread song up there, just because. And also, you're kind of required to like this because that's just how it is, you know. This was such a thing to not do using your phone but I think it's worth it. I'd have paid to make this but that's just me. Anywayyy, happy happy birthday!!! May this day be as amazing as you are!!! Real out of character but xoxo.\n\nSincerely,\nDaniela"
+  }
+}
